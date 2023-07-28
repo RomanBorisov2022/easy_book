@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewSavedNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сохраненные заметки:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Добавленный элемент ScrollView для прокрутки заметок -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Добавленный элемент LinearLayout для хранения заметок -->
+        <LinearLayout
+            android:id="@+id/linearLayoutNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Добавленный элемент EditText для добавления новых заметок -->
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите заметку" />
+
+    <!-- Добавленная кнопка для сохранения заметок -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сохранить заметки"
+        android:onClick="saveNotes" />
+
+    <!-- Добавленная кнопка для добавления новых заметок -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить заметку"
+        android:onClick="addNote" />
+
+</LinearLayout>

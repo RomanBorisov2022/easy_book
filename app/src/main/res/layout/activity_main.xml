@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Добавленный элемент TextView -->
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_note"
+        android:imeOptions="actionDone"
+        android:inputType="textMultiLine|textCapSentences|textMultiLine" />
+
+    <EditText
+        android:id="@+id/editTextBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Марка автомобиля" />
+
+    <EditText
+        android:id="@+id/editTextModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Модель автомобиля" />
+
+    <EditText
+        android:id="@+id/editTextMileage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пробег автомобиля" />
+
+    <ImageView
+        android:id="@+id/imageViewCarPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="196dp"
+        android:src="@drawable/default_car_photo" />
+
+
+    <Button
+        android:id="@+id/buttonSelectPhoto"
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Выбрать фото" />
+
+    <TextView
+        android:id="@+id/textViewPhotoPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Путь к фото: "
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="390dp"
+        android:layout_height="wrap_content"
+        android:onClick="saveNote"
+        android:text="Сохранить" />
+
+
+    <TextView
+        android:id="@+id/textViewNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Заметки:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black" />
+
+    <Button
+        android:id="@+id/buttonSavedNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Сохраненные заметки"
+        android:onClick="openSavedNotesActivity" />
+</LinearLayout>

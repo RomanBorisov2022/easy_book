@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Записная книжка</string>
+    <string name="hint_note">Введите заметку</string>
+    <string name="button_save">Сохранить</string>
+</resources>
